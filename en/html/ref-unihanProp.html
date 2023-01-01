@@ -1,0 +1,214 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><!--THIS FILE IS GENERATED FROM AN XML MASTER. DO NOT EDIT (7)--><title>TEI element unihanProp (unihan property) </title><meta property="Language" content="en"/><meta property="DC.Title" content="TEI element unihanProp (unihan property) "/><meta property="DC.Language" content="SCHEME=iso639 en"/><meta property="DC.Creator.Address" content="tei@oucs.ox.ac.uk"/><meta charset="utf-8"/><link href="guidelines.css" rel="stylesheet" type="text/css"/><link href="odd.css" rel="stylesheet" type="text/css"/><link rel="stylesheet" media="print" type="text/css" href="guidelines-print.css"/><script type="text/javascript" src="jquery-3.5.1.min.js"></script><script type="text/javascript" src="columnlist.js"></script><script type="text/javascript" src="popupFootnotes.js"></script><!--CAMPAIGN JS--><script type="text/javascript">
+        $(function() {
+         $('ul.attrefs-class').columnizeList({cols:3,width:30,unit:'%'});
+         $('ul.attrefs-element').columnizeList({cols:3,width:30,unit:'%'});
+         $(".displayRelaxButton").click(function() {
+           $(this).parent().find('.RNG_XML').toggle();
+           $(this).parent().find('.RNG_Compact').toggle();
+         });
+         $(".tocTree .showhide").click(function() {
+          $(this).find(".tocShow,.tocHide").toggle();
+          $(this).parent().find("ul.continuedtoc").toggle();
+          });
+        })
+    </script><script type="text/javascript">
+      $(function() {
+        $('.outOfDateTranslation').append(`<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" aria-label="" viewBox="0 0 16 16" style="position:absolute; top:2px; right:2px; color:red"><title></title><path d="M6.146 7.146a.5.5 0 0 1 .708 0L8 8.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 9l1.147 1.146a.5.5 0 0 1-.708.708L8 9.707l-1.146 1.147a.5.5 0 0 1-.708-.708L7.293 9 6.146 7.854a.5.5 0 0 1 0-.708z"></path><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"></path></svg>`);
+      });
+    </script><script type="text/javascript"><!--
+var displayXML=0;
+states=new Array()
+states[0]="element-a"
+states[1]="element-b"
+states[2]="element-c"
+states[3]="element-d"
+states[4]="element-e"
+states[5]="element-f"
+states[6]="element-g"
+states[7]="element-h"
+states[8]="element-i"
+states[9]="element-j"
+states[10]="element-k"
+states[11]="element-l"
+states[12]="element-m"
+states[13]="element-n"
+states[14]="element-o"
+states[15]="element-p"
+states[16]="element-q"
+states[17]="element-r"
+states[18]="element-s"
+states[19]="element-t"
+states[20]="element-u"
+states[21]="element-v"
+states[22]="element-w"
+states[23]="element-x"
+states[24]="element-y"
+states[25]="element-z"
+
+function startUp() {
+
+}
+
+function hideallExcept(elm) {
+for (var i = 0; i < states.length; i++) {
+ var layer;
+ if (layer = document.getElementById(states[i]) ) {
+  if (states[i] != elm) {
+    layer.style.display = "none";
+  }
+  else {
+   layer.style.display = "block";
+      }
+  }
+ }
+ var mod;
+ if ( mod = document.getElementById('byMod') ) {
+     mod.style.display = "none";
+ }
+}
+
+function showall() {
+ for (var i = 0; i < states.length; i++) {
+   var layer;
+   if (layer = document.getElementById(states[i]) ) {
+      layer.style.display = "block";
+      }
+  }
+}
+
+function showByMod() {
+  hideallExcept('');
+  var mod;
+  if (mod = document.getElementById('byMod') ) {
+     mod.style.display = "block";
+     }
+}
+
+	--></script></head><body id="TOP"><div id="container"><header id="banner"><a href="https://tei-c.org"><img src="Images/banner.jpg" alt="Text Encoding Initiative logo and banner"/></a><nav role="navigation"></nav></header></div><div class="mainhead"><h1>P5: 
+    Guidelines for Electronic Text Encoding and Interchange</h1><p>Version 4.5.0. Last updated on
+        25th October 2022, revision 871244cf1</p></div><div class="main-content"><div class="miniTOC miniTOC_right"><ul class="subtoc"><li class="subtoc"></li><li class="subtoc"></li><li class="subtoc"><a class="navigation" href="index.html">Home</a></li><li class="subtoc"><a class="navigation" href="REF-ELEMENTS.html">C Elements</a></li></ul></div><div><h3 class="oddSpec" id="unihanProp">&lt;unihanProp&gt;</h3><table class="wovenodd"><tr><td colspan="2" class="wovenodd-col2"><span class="label">&lt;unihanProp&gt; </span>(unihan property) holds the name and value of a normative or informative Unihan character (or glyph) property as part of its attributes. [<a class="link_ptr" href="WD.html#ucsprops" title="Character Properties"><span class="headingNumber">5.2.1 </span>Character Properties</a>]</td></tr><tr><td class="wovenodd-col1"><span class="label" lang="en">Module</span></td><td class="wovenodd-col2">gaiji — Characters, Glyphs, and Writing Modes</td></tr><tr><td class="wovenodd-col1"><span class="label" lang="en">Attributes</span></td><td class="wovenodd-col2"><a class="link_odd" title="provides attributes common to all elements in the TEI encoding scheme." href="ref-att.global.html">att.global</a> (<span class="attribute">@xml:id</span>, <span class="attribute">@n</span>, <span class="attribute">@xml:lang</span>, <span class="attribute">@xml:base</span>, <span class="attribute">@xml:space</span>)  (<a class="link_odd" title="provides rendering attributes common to all elements in the TEI encoding scheme." href="ref-att.global.rendition.html">att.global.rendition</a> (<span class="attribute">@rend</span>, <span class="attribute">@style</span>, <span class="attribute">@rendition</span>))  (<a class="link_odd" title="provides a set of attributes for hypertextual linking." href="ref-att.global.linking.html">att.global.linking</a> (<span class="attribute">@corresp</span>, <span class="attribute">@synch</span>, <span class="attribute">@sameAs</span>, <span class="attribute">@copyOf</span>, <span class="attribute">@next</span>, <span class="attribute">@prev</span>, <span class="attribute">@exclude</span>, <span class="attribute">@select</span>))  (<a class="link_odd" title="provides additional global attributes for associating specific analyses or interpretations with appropriate portions of a text." href="ref-att.global.analytic.html">att.global.analytic</a> (<span class="attribute">@ana</span>))  (<a class="link_odd" title="provides attributes used to express correspondence between an element and all or part of a facsimile image or surface." href="ref-att.global.facs.html">att.global.facs</a> (<span class="attribute">@facs</span>))  (<a class="link_odd" title="provides attributes allowing its member elements to specify one or more states or revision campaigns with which they are associated." href="ref-att.global.change.html">att.global.change</a> (<span class="attribute">@change</span>))  (<a class="link_odd" title="provides attributes indicating the agent responsible for some aspect of the text, the markup or something asserted by the markup, and the degree of certainty associated with it." href="ref-att.global.responsibility.html">att.global.responsibility</a> (<span class="attribute">@cert</span>, <span class="attribute">@resp</span>))  (<a class="link_odd" title="provides attributes used by elements to point to an external source." href="ref-att.global.source.html">att.global.source</a> (<span class="attribute">@source</span>)) <a class="link_odd" title="provides attributes for defining the properties of non-standard characters or glyphs." href="ref-att.gaijiProp.html">att.gaijiProp</a> (<span class="unusedattribute">name</span>, <span class="unusedattribute">value</span>, @version) <table class="attList"><tr><td class="odd_label">name<span class="bookmarklink"><a class="bookmarklink" id="tei_att.name" href="#tei_att.name" title="link to this attribute "><span class="invisible"> name</span><span class="pilcrow">¶</span></a></span></td><td class="odd_value">specifies the normalized name of a unicode han database (Unihan) property<table class="attDef"><tr><td class="odd_label"><span class="label" lang="en">Status</span> </td><td class="odd_value"><span lang="en"><span class="required">Required</span></span></td></tr><tr><td class="odd_label"><span lang="en" class="label">Datatype</span> </td><td class="odd_value"><a class="link_element" href="ref-teidata.xmlName.html">teidata.xmlName</a></td></tr><tr><td class="odd_label"><span class="label" lang="en">Legal values are:</span></td><td class="odd_value"><dl class="valList"><dt class="odd_label">kZVariant</dt><dd class="odd_value"></dd><dt class="odd_label">kAccountingNumeric</dt><dd class="odd_value"></dd><dt class="odd_label">kBigFive</dt><dd class="odd_value"></dd><dt class="odd_label">kCCCII</dt><dd class="odd_value"></dd><dt class="odd_label">kCNS1986</dt><dd class="odd_value"></dd><dt class="odd_label">kCNS1992</dt><dd class="odd_value"></dd><dt class="odd_label">kCangjie</dt><dd class="odd_value"></dd><dt class="odd_label">kCantonese</dt><dd class="odd_value"></dd><dt class="odd_label">kCheungBauer</dt><dd class="odd_value"></dd><dt class="odd_label">kCheungBauerIndex</dt><dd class="odd_value"></dd><dt class="odd_label">kCihaiT</dt><dd class="odd_value"></dd><dt class="odd_label">kCompatibilityVariant</dt><dd class="odd_value"></dd><dt class="odd_label">kCowles</dt><dd class="odd_value"></dd><dt class="odd_label">kDaeJaweon</dt><dd class="odd_value"></dd><dt class="odd_label">kDefinition</dt><dd class="odd_value"></dd><dt class="odd_label">kEACC</dt><dd class="odd_value"></dd><dt class="odd_label">kFenn</dt><dd class="odd_value"></dd><dt class="odd_label">kFennIndex</dt><dd class="odd_value"></dd><dt class="odd_label">kFourCornerCode</dt><dd class="odd_value"></dd><dt class="odd_label">kFrequency</dt><dd class="odd_value"></dd><dt class="odd_label">kGB0</dt><dd class="odd_value"></dd><dt class="odd_label">kGB1</dt><dd class="odd_value"></dd><dt class="odd_label">kGB3</dt><dd class="odd_value"></dd><dt class="odd_label">kGB5</dt><dd class="odd_value"></dd><dt class="odd_label">kGB7</dt><dd class="odd_value"></dd><dt class="odd_label">kGB8</dt><dd class="odd_value"></dd><dt class="odd_label">kGSR</dt><dd class="odd_value"></dd><dt class="odd_label">kGradeLevel</dt><dd class="odd_value"></dd><dt class="odd_label">kHDZRadBreak</dt><dd class="odd_value"></dd><dt class="odd_label">kHKGlyph</dt><dd class="odd_value"></dd><dt class="odd_label">kHKSCS</dt><dd class="odd_value"></dd><dt class="odd_label">kHanYu</dt><dd class="odd_value"></dd><dt class="odd_label">kHangul</dt><dd class="odd_value"></dd><dt class="odd_label">kHanyuPinlu</dt><dd class="odd_value"></dd><dt class="odd_label">kHanyuPinyin</dt><dd class="odd_value"></dd><dt class="odd_label">kIBMJapan</dt><dd class="odd_value"></dd><dt class="odd_label">kIICore</dt><dd class="odd_value"></dd><dt class="odd_label">kIRGDaeJaweon</dt><dd class="odd_value"></dd><dt class="odd_label">kIRGDaiKanwaZiten</dt><dd class="odd_value"></dd><dt class="odd_label">kIRGHanyuDaZidian</dt><dd class="odd_value"></dd><dt class="odd_label">kIRGKangXi</dt><dd class="odd_value"></dd><dt class="odd_label">kIRG_GSource</dt><dd class="odd_value"></dd><dt class="odd_label">kIRG_HSource</dt><dd class="odd_value"></dd><dt class="odd_label">kIRG_JSource</dt><dd class="odd_value"></dd><dt class="odd_label">kIRG_KPSource</dt><dd class="odd_value"></dd><dt class="odd_label">kIRG_KSource</dt><dd class="odd_value"></dd><dt class="odd_label">kIRG_MSource</dt><dd class="odd_value"></dd><dt class="odd_label">kIRG_TSource</dt><dd class="odd_value"></dd><dt class="odd_label">kIRG_USource</dt><dd class="odd_value"></dd><dt class="odd_label">kIRG_VSource</dt><dd class="odd_value"></dd><dt class="odd_label">kJIS0213</dt><dd class="odd_value"></dd><dt class="odd_label">kJa</dt><dd class="odd_value"></dd><dt class="odd_label">kJapaneseKun</dt><dd class="odd_value"></dd><dt class="odd_label">kJapaneseOn</dt><dd class="odd_value"></dd><dt class="odd_label">kJinmeiyoKanji</dt><dd class="odd_value"></dd><dt class="odd_label">kJis0</dt><dd class="odd_value"></dd><dt class="odd_label">kJis1</dt><dd class="odd_value"></dd><dt class="odd_label">kJoyoKanji</dt><dd class="odd_value"></dd><dt class="odd_label">kKPS0</dt><dd class="odd_value"></dd><dt class="odd_label">kKPS1</dt><dd class="odd_value"></dd><dt class="odd_label">kKSC0</dt><dd class="odd_value"></dd><dt class="odd_label">kKSC1</dt><dd class="odd_value"></dd><dt class="odd_label">kKangXi</dt><dd class="odd_value"></dd><dt class="odd_label">kKarlgren</dt><dd class="odd_value"></dd><dt class="odd_label">kKorean</dt><dd class="odd_value"></dd><dt class="odd_label">kKoreanEducationHanja</dt><dd class="odd_value"></dd><dt class="odd_label">kKoreanName</dt><dd class="odd_value"></dd><dt class="odd_label">kLau</dt><dd class="odd_value"></dd><dt class="odd_label">kMainlandTelegraph</dt><dd class="odd_value"></dd><dt class="odd_label">kMandarin</dt><dd class="odd_value"></dd><dt class="odd_label">kMatthews</dt><dd class="odd_value"></dd><dt class="odd_label">kMeyerWempe</dt><dd class="odd_value"></dd><dt class="odd_label">kMorohashi</dt><dd class="odd_value"></dd><dt class="odd_label">kNelson</dt><dd class="odd_value"></dd><dt class="odd_label">kOtherNumeric</dt><dd class="odd_value"></dd><dt class="odd_label">kPhonetic</dt><dd class="odd_value"></dd><dt class="odd_label">kPrimaryNumeric</dt><dd class="odd_value"></dd><dt class="odd_label">kPseudoGB1</dt><dd class="odd_value"></dd><dt class="odd_label">kRSAdobe_Japan1_6</dt><dd class="odd_value"></dd><dt class="odd_label">kRSJapanese</dt><dd class="odd_value"></dd><dt class="odd_label">kRSKanWa</dt><dd class="odd_value"></dd><dt class="odd_label">kRSKangXi</dt><dd class="odd_value"></dd><dt class="odd_label">kRSKorean</dt><dd class="odd_value"></dd><dt class="odd_label">kRSUnicode</dt><dd class="odd_value"></dd><dt class="odd_label">kSBGY</dt><dd class="odd_value"></dd><dt class="odd_label">kSemanticVariant</dt><dd class="odd_value"></dd><dt class="odd_label">kSimplifiedVariant</dt><dd class="odd_value"></dd><dt class="odd_label">kSpecializedSemanticVariant</dt><dd class="odd_value"></dd><dt class="odd_label">kTGH</dt><dd class="odd_value"></dd><dt class="odd_label">kTaiwanTelegraph</dt><dd class="odd_value"></dd><dt class="odd_label">kTang</dt><dd class="odd_value"></dd><dt class="odd_label">kTotalStrokes</dt><dd class="odd_value"></dd><dt class="odd_label">kTraditionalVariant</dt><dd class="odd_value"></dd><dt class="odd_label">kVietnamese</dt><dd class="odd_value"></dd><dt class="odd_label">kXHC1983</dt><dd class="odd_value"></dd><dt class="odd_label">kXerox</dt><dd class="odd_value"></dd></dl></td></tr></table></td></tr><tr><td class="odd_label">value<span class="bookmarklink"><a class="bookmarklink" id="tei_att.value" href="#tei_att.value" title="link to this attribute "><span class="invisible"> value</span><span class="pilcrow">¶</span></a></span></td><td class="odd_value">specifies the value of a named Unihan property<table class="attDef"><tr><td class="odd_label"><span class="label" lang="en">Status</span> </td><td class="odd_value"><span lang="en"><span class="required">Required</span></span></td></tr><tr><td class="odd_label"><span lang="en" class="label">Datatype</span> </td><td class="odd_value"><a class="link_element" href="ref-teidata.word.html">teidata.word</a></td></tr></table></td></tr></table></td></tr><tr><td class="wovenodd-col1"><span class="label" lang="en">Contained by</span></td><td class="wovenodd-col2"><div class="parent"><div class="specChildren"><div class="specChild"><span class="specChildModule">gaiji: </span><span class="specChildElements"><a class="link_odd_elementSpec" title="(character) provides descriptive information about a character." href="ref-char.html">char</a> <a class="link_odd_elementSpec" title="(character glyph) provides descriptive information about a character glyph." href="ref-glyph.html">glyph</a></span></div></div></div></td></tr><tr><td class="wovenodd-col1"><span class="label" lang="en">May contain</span></td><td class="wovenodd-col2"><span lang="en">Empty element</span></td></tr><tr><td class="wovenodd-col1"><span class="label" lang="en">Note</span></td><td class="wovenodd-col2"><!-- --><p>A definitive list of current Unihan property names is provided in the <a class="link_ref" href="https://www.unicode.org/reports/tr38/">Unicode Han Database</a>.</p></td></tr><tr><td class="wovenodd-col1"><span class="label" lang="en">Example</span></td><td class="wovenodd-col2"><div id="index-egXML-d54e59378" class="pre egXML_valid"><span class="element">&lt;unihanProp <span class="attribute">name</span>="<span class="attributevalue">kRSKangXi</span>" <span class="attribute">value</span>="<span class="attributevalue">120.5</span>"<br/> <span class="attribute">version</span>="<span class="attributevalue">12.1</span>"/&gt;</span><div style="float: right;"><a href="examples-unihanProp.html">Show all</a> </div></div></td></tr><tr><td class="wovenodd-col1"><span class="label" lang="en">Content model</span></td><td class="wovenodd-col2"><pre class="eg"><span class="element">&lt;content&gt;</span><br/> <span class="element">&lt;empty/&gt;</span><br/><span class="element">&lt;/content&gt;</span></pre></td></tr><tr><td class="wovenodd-col1"><span class="label" lang="en">Schema Declaration</span></td><td class="wovenodd-col2"><div class="displayRelax"><button class="displayRelaxButton"><span class="RNG_Compact">XML syntax</span><span class="RNG_XML">Compact syntax</span></button><pre class="RNG_XML"><span class="element">&lt;rng:element <span class="attribute">name</span>="<span class="attributevalue">unihanProp</span>"&gt;</span><br/> <span class="element">&lt;rng:ref <span class="attribute">name</span>="<span class="attributevalue">att.global.attributes</span>"/&gt;</span><br/> <span class="element">&lt;rng:ref <span class="attribute">name</span>="<span class="attributevalue">att.global.rendition.attributes</span>"/&gt;</span><br/> <span class="element">&lt;rng:ref <span class="attribute">name</span>="<span class="attributevalue">att.global.linking.attributes</span>"/&gt;</span><br/> <span class="element">&lt;rng:ref <span class="attribute">name</span>="<span class="attributevalue">att.global.analytic.attributes</span>"/&gt;</span><br/> <span class="element">&lt;rng:ref <span class="attribute">name</span>="<span class="attributevalue">att.global.facs.attributes</span>"/&gt;</span><br/> <span class="element">&lt;rng:ref <span class="attribute">name</span>="<span class="attributevalue">att.global.change.attributes</span>"/&gt;</span><br/> <span class="element">&lt;rng:ref <span class="attribute">name</span>="<span class="attributevalue">att.global.responsibility.attributes</span>"/&gt;</span><br/> <span class="element">&lt;rng:ref <span class="attribute">name</span>="<span class="attributevalue">att.global.source.attributes</span>"/&gt;</span><br/> <span class="element">&lt;rng:ref <span class="attribute">name</span>="<span class="attributevalue">att.gaijiProp.attribute.version</span>"/&gt;</span><br/> <span class="element">&lt;rng:attribute <span class="attribute">name</span>="<span class="attributevalue">name</span>"&gt;</span><br/>  <span class="element">&lt;rng:choice&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kZVariant<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kAccountingNumeric<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kBigFive<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kCCCII<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kCNS1986<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kCNS1992<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kCangjie<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kCantonese<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kCheungBauer<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kCheungBauerIndex<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kCihaiT<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kCompatibilityVariant<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kCowles<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kDaeJaweon<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kDefinition<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kEACC<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kFenn<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kFennIndex<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kFourCornerCode<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kFrequency<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kGB0<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kGB1<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kGB3<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kGB5<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kGB7<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kGB8<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kGSR<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kGradeLevel<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kHDZRadBreak<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kHKGlyph<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kHKSCS<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kHanYu<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kHangul<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kHanyuPinlu<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kHanyuPinyin<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kIBMJapan<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kIICore<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kIRGDaeJaweon<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kIRGDaiKanwaZiten<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kIRGHanyuDaZidian<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kIRGKangXi<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kIRG_GSource<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kIRG_HSource<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kIRG_JSource<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kIRG_KPSource<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kIRG_KSource<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kIRG_MSource<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kIRG_TSource<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kIRG_USource<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kIRG_VSource<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kJIS0213<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kJa<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kJapaneseKun<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kJapaneseOn<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kJinmeiyoKanji<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kJis0<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kJis1<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kJoyoKanji<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kKPS0<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kKPS1<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kKSC0<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kKSC1<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kKangXi<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kKarlgren<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kKorean<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kKoreanEducationHanja<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kKoreanName<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kLau<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kMainlandTelegraph<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kMandarin<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kMatthews<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kMeyerWempe<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kMorohashi<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kNelson<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kOtherNumeric<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kPhonetic<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kPrimaryNumeric<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kPseudoGB1<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kRSAdobe_Japan1_6<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kRSJapanese<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kRSKanWa<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kRSKangXi<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kRSKorean<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kRSUnicode<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kSBGY<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kSemanticVariant<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kSimplifiedVariant<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kSpecializedSemanticVariant<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kTGH<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kTaiwanTelegraph<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kTang<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kTotalStrokes<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kTraditionalVariant<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kVietnamese<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kXHC1983<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kXerox<span class="element">&lt;/rng:value&gt;</span><br/>  <span class="element">&lt;/rng:choice&gt;</span><br/> <span class="element">&lt;/rng:attribute&gt;</span><br/> <span class="element">&lt;rng:attribute <span class="attribute">name</span>="<span class="attributevalue">value</span>"&gt;</span><br/>  <span class="element">&lt;rng:ref <span class="attribute">name</span>="<span class="attributevalue">teidata.word</span>"/&gt;</span><br/> <span class="element">&lt;/rng:attribute&gt;</span><br/> <span class="element">&lt;rng:empty/&gt;</span><br/><span class="element">&lt;/rng:element&gt;</span></pre><pre class="RNG_Compact">
+<span class="rnc_keyword">element</span> <span class="rnc_nc">unihanProp</span>
+{
+   <a class="link_odd" title="provides attributes common to all elements in the TEI encoding scheme." href="ref-att.global.html">att.global.attributes</a>,
+   <a class="link_odd" title="provides rendering attributes common to all elements in the TEI encoding scheme." href="ref-att.global.rendition.html">att.global.rendition.attributes</a>,
+   <a class="link_odd" title="provides a set of attributes for hypertextual linking." href="ref-att.global.linking.html">att.global.linking.attributes</a>,
+   <a class="link_odd" title="provides additional global attributes for associating specific analyses or interpretations with appropriate portions of a text." href="ref-att.global.analytic.html">att.global.analytic.attributes</a>,
+   <a class="link_odd" title="provides attributes used to express correspondence between an element and all or part of a facsimile image or surface." href="ref-att.global.facs.html">att.global.facs.attributes</a>,
+   <a class="link_odd" title="provides attributes allowing its member elements to specify one or more states or revision campaigns with which they are associated." href="ref-att.global.change.html">att.global.change.attributes</a>,
+   <a class="link_odd" title="provides attributes indicating the agent responsible for some aspect of the text, the markup or something asserted by the markup, and the degree of certainty associated with it." href="ref-att.global.responsibility.html">att.global.responsibility.attributes</a>,
+   <a class="link_odd" title="provides attributes used by elements to point to an external source." href="ref-att.global.source.html">att.global.source.attributes</a>,
+   <a class="link_odd" title="provides attributes for defining the properties of non-standard characters or glyphs." href="ref-att.gaijiProp.html">att.gaijiProp.attribute.version</a>,
+   <span class="rnc_keyword">attribute</span> <span class="rnc_nc">name</span>
+   {
+      "kZVariant"
+    | "kAccountingNumeric"
+    | "kBigFive"
+    | "kCCCII"
+    | "kCNS1986"
+    | "kCNS1992"
+    | "kCangjie"
+    | "kCantonese"
+    | "kCheungBauer"
+    | "kCheungBauerIndex"
+    | "kCihaiT"
+    | "kCompatibilityVariant"
+    | "kCowles"
+    | "kDaeJaweon"
+    | "kDefinition"
+    | "kEACC"
+    | "kFenn"
+    | "kFennIndex"
+    | "kFourCornerCode"
+    | "kFrequency"
+    | "kGB0"
+    | "kGB1"
+    | "kGB3"
+    | "kGB5"
+    | "kGB7"
+    | "kGB8"
+    | "kGSR"
+    | "kGradeLevel"
+    | "kHDZRadBreak"
+    | "kHKGlyph"
+    | "kHKSCS"
+    | "kHanYu"
+    | "kHangul"
+    | "kHanyuPinlu"
+    | "kHanyuPinyin"
+    | "kIBMJapan"
+    | "kIICore"
+    | "kIRGDaeJaweon"
+    | "kIRGDaiKanwaZiten"
+    | "kIRGHanyuDaZidian"
+    | "kIRGKangXi"
+    | "kIRG_GSource"
+    | "kIRG_HSource"
+    | "kIRG_JSource"
+    | "kIRG_KPSource"
+    | "kIRG_KSource"
+    | "kIRG_MSource"
+    | "kIRG_TSource"
+    | "kIRG_USource"
+    | "kIRG_VSource"
+    | "kJIS0213"
+    | "kJa"
+    | "kJapaneseKun"
+    | "kJapaneseOn"
+    | "kJinmeiyoKanji"
+    | "kJis0"
+    | "kJis1"
+    | "kJoyoKanji"
+    | "kKPS0"
+    | "kKPS1"
+    | "kKSC0"
+    | "kKSC1"
+    | "kKangXi"
+    | "kKarlgren"
+    | "kKorean"
+    | "kKoreanEducationHanja"
+    | "kKoreanName"
+    | "kLau"
+    | "kMainlandTelegraph"
+    | "kMandarin"
+    | "kMatthews"
+    | "kMeyerWempe"
+    | "kMorohashi"
+    | "kNelson"
+    | "kOtherNumeric"
+    | "kPhonetic"
+    | "kPrimaryNumeric"
+    | "kPseudoGB1"
+    | "kRSAdobe_Japan1_6"
+    | "kRSJapanese"
+    | "kRSKanWa"
+    | "kRSKangXi"
+    | "kRSKorean"
+    | "kRSUnicode"
+    | "kSBGY"
+    | "kSemanticVariant"
+    | "kSimplifiedVariant"
+    | "kSpecializedSemanticVariant"
+    | "kTGH"
+    | "kTaiwanTelegraph"
+    | "kTang"
+    | "kTotalStrokes"
+    | "kTraditionalVariant"
+    | "kVietnamese"
+    | "kXHC1983"
+    | "kXerox"
+   },
+   attribute value { <a class="link_odd" title="" href="ref-teidata.word.html">teidata.word</a> },
+   empty
+}</pre></div></td></tr></table></div></div><div class="stdfooter autogenerated"><p>
+    [<a href="../../en/html/ref-unihanProp.html">English</a>]
+    [<a href="../../de/html/ref-unihanProp.html">Deutsch</a>]
+    [<a href="../../es/html/ref-unihanProp.html">Español</a>]
+    [<a href="../../it/html/ref-unihanProp.html">Italiano</a>]
+    [<a href="../../fr/html/ref-unihanProp.html">Français</a>]
+    [<a href="../../ja/html/ref-unihanProp.html">日本語</a>]
+    [<a href="../../ko/html/ref-unihanProp.html">한국어</a>]
+    [<a href="../../zh-TW/html/ref-unihanProp.html">中文</a>]
+    </p><hr/><div class="footer"><a class="plain" href="https://tei-c.org/about/">TEI Consortium</a> | <a class="plain" href="https://tei-c.org/about/contact/">Feedback</a></div><hr/><address><br/>TEI Guidelines <a class="link_ref" href="AB.html#ABTEI4" title="Future Developments and Version Numbers">Version</a> <a class="link_ref" href="../../readme-4.5.0.html">4.5.0</a>. Last updated on <span class="date">25th October 2022</span>, revision <a class="link_ref" href="https://github.com/TEIC/TEI/commit/871244cf1">871244cf1</a>. This page generated on 2023-01-01T06:19:22Z.</address></div></body></html>

@@ -1,0 +1,338 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><!--THIS FILE IS GENERATED FROM AN XML MASTER. DO NOT EDIT (7)--><title>TEI element unicodeProp (unicode property) </title><meta property="Language" content="ja"/><meta property="DC.Title" content="TEI element unicodeProp (unicode property) "/><meta property="DC.Language" content="SCHEME=iso639 ja"/><meta property="DC.Creator.Address" content="tei@oucs.ox.ac.uk"/><meta charset="utf-8"/><link href="guidelines.css" rel="stylesheet" type="text/css"/><link href="odd.css" rel="stylesheet" type="text/css"/><link rel="stylesheet" media="print" type="text/css" href="guidelines-print.css"/><script type="text/javascript" src="jquery-3.5.1.min.js"></script><script type="text/javascript" src="columnlist.js"></script><script type="text/javascript" src="popupFootnotes.js"></script><!--CAMPAIGN JS--><script type="text/javascript">
+        $(function() {
+         $('ul.attrefs-class').columnizeList({cols:3,width:30,unit:'%'});
+         $('ul.attrefs-element').columnizeList({cols:3,width:30,unit:'%'});
+         $(".displayRelaxButton").click(function() {
+           $(this).parent().find('.RNG_XML').toggle();
+           $(this).parent().find('.RNG_Compact').toggle();
+         });
+         $(".tocTree .showhide").click(function() {
+          $(this).find(".tocShow,.tocHide").toggle();
+          $(this).parent().find("ul.continuedtoc").toggle();
+          });
+        })
+    </script><script type="text/javascript">
+      $(function() {
+        $('.outOfDateTranslation').append(`<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" aria-label="" viewBox="0 0 16 16" style="position:absolute; top:2px; right:2px; color:red"><title></title><path d="M6.146 7.146a.5.5 0 0 1 .708 0L8 8.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 9l1.147 1.146a.5.5 0 0 1-.708.708L8 9.707l-1.146 1.147a.5.5 0 0 1-.708-.708L7.293 9 6.146 7.854a.5.5 0 0 1 0-.708z"></path><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"></path></svg>`);
+      });
+    </script><script type="text/javascript"><!--
+var displayXML=0;
+states=new Array()
+states[0]="element-a"
+states[1]="element-b"
+states[2]="element-c"
+states[3]="element-d"
+states[4]="element-e"
+states[5]="element-f"
+states[6]="element-g"
+states[7]="element-h"
+states[8]="element-i"
+states[9]="element-j"
+states[10]="element-k"
+states[11]="element-l"
+states[12]="element-m"
+states[13]="element-n"
+states[14]="element-o"
+states[15]="element-p"
+states[16]="element-q"
+states[17]="element-r"
+states[18]="element-s"
+states[19]="element-t"
+states[20]="element-u"
+states[21]="element-v"
+states[22]="element-w"
+states[23]="element-x"
+states[24]="element-y"
+states[25]="element-z"
+
+function startUp() {
+
+}
+
+function hideallExcept(elm) {
+for (var i = 0; i < states.length; i++) {
+ var layer;
+ if (layer = document.getElementById(states[i]) ) {
+  if (states[i] != elm) {
+    layer.style.display = "none";
+  }
+  else {
+   layer.style.display = "block";
+      }
+  }
+ }
+ var mod;
+ if ( mod = document.getElementById('byMod') ) {
+     mod.style.display = "none";
+ }
+}
+
+function showall() {
+ for (var i = 0; i < states.length; i++) {
+   var layer;
+   if (layer = document.getElementById(states[i]) ) {
+      layer.style.display = "block";
+      }
+  }
+}
+
+function showByMod() {
+  hideallExcept('');
+  var mod;
+  if (mod = document.getElementById('byMod') ) {
+     mod.style.display = "block";
+     }
+}
+
+	--></script></head><body id="TOP"><div id="container"><header id="banner"><a href="https://tei-c.org"><img src="Images/banner.jpg" alt="Text Encoding Initiative logo and banner"/></a><nav role="navigation"></nav></header></div><div class="mainhead"><h1>P5: 
+    TEIガイドライン</h1><p>Version 4.5.0. Last updated on
+        25th October 2022, revision 871244cf1</p></div><div class="main-content"><div class="miniTOC miniTOC_right"><ul class="subtoc"><li class="subtoc"></li><li class="subtoc"></li><li class="subtoc"><a class="navigation" href="index.html">ホーム</a></li><li class="subtoc"><a class="navigation" href="REF-ELEMENTS.html">C 要素</a></li></ul></div><div><h3 class="oddSpec" id="unicodeProp">&lt;unicodeProp&gt;</h3><table class="wovenodd"><tr><td colspan="2" class="wovenodd-col2"><span class="label">&lt;unicodeProp&gt; </span>(unicode property) provides a Unicode property for a character (or glyph). [<a class="link_ptr" href="WD.html#ucsprops" title="Character Properties"><span class="headingNumber">5.2.1 </span>Character Properties</a>]</td></tr><tr><td class="wovenodd-col1"><span class="label" lang="ja">モジュール</span></td><td class="wovenodd-col2">gaiji — Characters, Glyphs, and Writing Modes</td></tr><tr><td class="wovenodd-col1"><span class="label" lang="ja">属性</span></td><td class="wovenodd-col2"><a class="link_odd" title="TEI符号化スキーム中の全要素に共通する属性を示す。" href="ref-att.global.html">att.global</a> (<span class="attribute">@xml:id</span>, <span class="attribute">@n</span>, <span class="attribute">@xml:lang</span>, <span class="attribute">@xml:base</span>, <span class="attribute">@xml:space</span>)  (<a class="link_odd" title="TEIの符号化スキーマにおけるすべての要素に共通するレンダリング属性を提供する。" href="ref-att.global.rendition.html">att.global.rendition</a> (<span class="attribute">@rend</span>, <span class="attribute">@style</span>, <span class="attribute">@rendition</span>))  (<a class="link_odd" title="ハイパーテキストリンクの属性セットを提供する。" href="ref-att.global.linking.html">att.global.linking</a> (<span class="attribute">@corresp</span>, <span class="attribute">@synch</span>, <span class="attribute">@sameAs</span>, <span class="attribute">@copyOf</span>, <span class="attribute">@next</span>, <span class="attribute">@prev</span>, <span class="attribute">@exclude</span>, <span class="attribute">@select</span>))  (<a class="link_odd" title="任意のテキスト部分への分析・解釈に関連するグローバル属性を示す。" href="ref-att.global.analytic.html">att.global.analytic</a> (<span class="attribute">@ana</span>))  (<a class="link_odd" title="転写されたテキストを含む要素と、そのテキストを表す画像の全部または一部との間の対応を表すために使用される属性を提供する。" href="ref-att.global.facs.html">att.global.facs</a> (<span class="attribute">@facs</span>))  (<a class="link_odd" title="そのメンバ要素が関連する1つ以上の状態または改定を指定できるように、@change属性を提供する。" href="ref-att.global.change.html">att.global.change</a> (<span class="attribute">@change</span>))  (<a class="link_odd" title="テキストやマークアップ、あるいはマークアップによって示されたものの何らかの側面についての責任者と、それに関する確信の度合を示す属性を提供する。" href="ref-att.global.responsibility.html">att.global.responsibility</a> (<span class="attribute">@cert</span>, <span class="attribute">@resp</span>))  (<a class="link_odd" title="外部ソースを参照する要素によって用いられる属性を示す。" href="ref-att.global.source.html">att.global.source</a> (<span class="attribute">@source</span>)) <a class="link_odd" title="" href="ref-att.gaijiProp.html">att.gaijiProp</a> (<span class="unusedattribute">name</span>, <span class="unusedattribute">value</span>, @version) <table class="attList"><tr><td class="odd_label">name<span class="bookmarklink"><a class="bookmarklink" id="tei_att.name" href="#tei_att.name" title="link to this attribute "><span class="invisible"> name</span><span class="pilcrow">¶</span></a></span></td><td class="odd_value">specifies the normalized name of a Unicode property.<table class="attDef"><tr><td class="odd_label"><span class="label" lang="ja">状態</span> </td><td class="odd_value"><span lang="ja"><span class="required">必須</span></span></td></tr><tr><td class="odd_label"><span lang="ja" class="label">データ型</span> </td><td class="odd_value"><a class="link_element" href="ref-teidata.xmlName.html">teidata.xmlName</a></td></tr><tr><td class="odd_label"><span class="label" lang="ja">正当な値:</span></td><td class="odd_value"><dl class="valList"><dt class="odd_label">Age</dt><dd class="odd_value"></dd><dt class="odd_label">AHex</dt><dd class="odd_value"></dd><dt class="odd_label">Alpha</dt><dd class="odd_value"></dd><dt class="odd_label">Alphabetic</dt><dd class="odd_value"></dd><dt class="odd_label">ASCII_Hex_Digit</dt><dd class="odd_value"></dd><dt class="odd_label">bc</dt><dd class="odd_value"></dd><dt class="odd_label">Bidi_C</dt><dd class="odd_value"></dd><dt class="odd_label">Bidi_Class</dt><dd class="odd_value"></dd><dt class="odd_label">Bidi_Control</dt><dd class="odd_value"></dd><dt class="odd_label">Bidi_M</dt><dd class="odd_value"></dd><dt class="odd_label">Bidi_Mirrored</dt><dd class="odd_value"></dd><dt class="odd_label">Bidi_Mirroring_Glyph</dt><dd class="odd_value"></dd><dt class="odd_label">Bidi_Paired_Bracket</dt><dd class="odd_value"></dd><dt class="odd_label">Bidi_Paired_Bracket_Type</dt><dd class="odd_value"></dd><dt class="odd_label">blk</dt><dd class="odd_value"></dd><dt class="odd_label">Block</dt><dd class="odd_value"></dd><dt class="odd_label">bmg</dt><dd class="odd_value"></dd><dt class="odd_label">bpb</dt><dd class="odd_value"></dd><dt class="odd_label">bpt</dt><dd class="odd_value"></dd><dt class="odd_label">Canonical_Combining_Class</dt><dd class="odd_value"></dd><dt class="odd_label">Case_Folding</dt><dd class="odd_value"></dd><dt class="odd_label">Case_Ignorable</dt><dd class="odd_value"></dd><dt class="odd_label">Cased</dt><dd class="odd_value"></dd><dt class="odd_label">ccc</dt><dd class="odd_value"></dd><dt class="odd_label">CE</dt><dd class="odd_value"></dd><dt class="odd_label">cf</dt><dd class="odd_value"></dd><dt class="odd_label">Changes_When_Casefolded</dt><dd class="odd_value"></dd><dt class="odd_label">Changes_When_Casemapped</dt><dd class="odd_value"></dd><dt class="odd_label">Changes_When_Lowercased</dt><dd class="odd_value"></dd><dt class="odd_label">Changes_When_NFKC_Casefolded</dt><dd class="odd_value"></dd><dt class="odd_label">Changes_When_Titlecased</dt><dd class="odd_value"></dd><dt class="odd_label">Changes_When_Uppercased</dt><dd class="odd_value"></dd><dt class="odd_label">CI</dt><dd class="odd_value"></dd><dt class="odd_label">Comp_Ex</dt><dd class="odd_value"></dd><dt class="odd_label">Composition_Exclusion</dt><dd class="odd_value"></dd><dt class="odd_label">CWCF</dt><dd class="odd_value"></dd><dt class="odd_label">CWCM</dt><dd class="odd_value"></dd><dt class="odd_label">CWKCF</dt><dd class="odd_value"></dd><dt class="odd_label">CWL</dt><dd class="odd_value"></dd><dt class="odd_label">CWT</dt><dd class="odd_value"></dd><dt class="odd_label">CWU</dt><dd class="odd_value"></dd><dt class="odd_label">Dash</dt><dd class="odd_value"></dd><dt class="odd_label">Decomposition_Mapping</dt><dd class="odd_value"></dd><dt class="odd_label">Decomposition_Type</dt><dd class="odd_value"></dd><dt class="odd_label">Default_Ignorable_Code_Point</dt><dd class="odd_value"></dd><dt class="odd_label">Dep</dt><dd class="odd_value"></dd><dt class="odd_label">Deprecated</dt><dd class="odd_value"></dd><dt class="odd_label">DI</dt><dd class="odd_value"></dd><dt class="odd_label">Dia</dt><dd class="odd_value"></dd><dt class="odd_label">Diacritic</dt><dd class="odd_value"></dd><dt class="odd_label">dm</dt><dd class="odd_value"></dd><dt class="odd_label">dt</dt><dd class="odd_value"></dd><dt class="odd_label">ea</dt><dd class="odd_value"></dd><dt class="odd_label">East_Asian_Width</dt><dd class="odd_value"></dd><dt class="odd_label">EqUIdeo</dt><dd class="odd_value"></dd><dt class="odd_label">Equivalent_Unified_Ideograph</dt><dd class="odd_value"></dd><dt class="odd_label">Expands_On_NFC</dt><dd class="odd_value"></dd><dt class="odd_label">Expands_On_NFD</dt><dd class="odd_value"></dd><dt class="odd_label">Expands_On_NFKC</dt><dd class="odd_value"></dd><dt class="odd_label">Expands_On_NFKD</dt><dd class="odd_value"></dd><dt class="odd_label">Ext</dt><dd class="odd_value"></dd><dt class="odd_label">Extender</dt><dd class="odd_value"></dd><dt class="odd_label">FC_NFKC</dt><dd class="odd_value"></dd><dt class="odd_label">FC_NFKC_Closure</dt><dd class="odd_value"></dd><dt class="odd_label">Full_Composition_Exclusion</dt><dd class="odd_value"></dd><dt class="odd_label">gc</dt><dd class="odd_value"></dd><dt class="odd_label">GCB</dt><dd class="odd_value"></dd><dt class="odd_label">General_Category</dt><dd class="odd_value"></dd><dt class="odd_label">Gr_Base</dt><dd class="odd_value"></dd><dt class="odd_label">Gr_Ext</dt><dd class="odd_value"></dd><dt class="odd_label">Gr_Link</dt><dd class="odd_value"></dd><dt class="odd_label">Grapheme_Base</dt><dd class="odd_value"></dd><dt class="odd_label">Grapheme_Cluster_Break</dt><dd class="odd_value"></dd><dt class="odd_label">Grapheme_Extend</dt><dd class="odd_value"></dd><dt class="odd_label">Grapheme_Link</dt><dd class="odd_value"></dd><dt class="odd_label">Hangul_Syllable_Type</dt><dd class="odd_value"></dd><dt class="odd_label">Hex</dt><dd class="odd_value"></dd><dt class="odd_label">Hex_Digit</dt><dd class="odd_value"></dd><dt class="odd_label">hst</dt><dd class="odd_value"></dd><dt class="odd_label">Hyphen</dt><dd class="odd_value"></dd><dt class="odd_label">ID_Continue</dt><dd class="odd_value"></dd><dt class="odd_label">ID_Start</dt><dd class="odd_value"></dd><dt class="odd_label">IDC</dt><dd class="odd_value"></dd><dt class="odd_label">Ideo</dt><dd class="odd_value"></dd><dt class="odd_label">Ideographic</dt><dd class="odd_value"></dd><dt class="odd_label">IDS</dt><dd class="odd_value"></dd><dt class="odd_label">IDS_Binary_Operator</dt><dd class="odd_value"></dd><dt class="odd_label">IDS_Trinary_Operator</dt><dd class="odd_value"></dd><dt class="odd_label">IDSB</dt><dd class="odd_value"></dd><dt class="odd_label">IDST</dt><dd class="odd_value"></dd><dt class="odd_label">Indic_Positional_Category</dt><dd class="odd_value"></dd><dt class="odd_label">Indic_Syllabic_Category</dt><dd class="odd_value"></dd><dt class="odd_label">InPC</dt><dd class="odd_value"></dd><dt class="odd_label">InSC</dt><dd class="odd_value"></dd><dt class="odd_label">isc</dt><dd class="odd_value"></dd><dt class="odd_label">ISO_Comment</dt><dd class="odd_value"></dd><dt class="odd_label">Jamo_Short_Name</dt><dd class="odd_value"></dd><dt class="odd_label">jg</dt><dd class="odd_value"></dd><dt class="odd_label">Join_C</dt><dd class="odd_value"></dd><dt class="odd_label">Join_Control</dt><dd class="odd_value"></dd><dt class="odd_label">Joining_Group</dt><dd class="odd_value"></dd><dt class="odd_label">Joining_Type</dt><dd class="odd_value"></dd><dt class="odd_label">JSN</dt><dd class="odd_value"></dd><dt class="odd_label">jt</dt><dd class="odd_value"></dd><dt class="odd_label">kAccountingNumeric</dt><dd class="odd_value"></dd><dt class="odd_label">kCompatibilityVariant</dt><dd class="odd_value"></dd><dt class="odd_label">kIICore</dt><dd class="odd_value"></dd><dt class="odd_label">kIRG_GSource</dt><dd class="odd_value"></dd><dt class="odd_label">kIRG_HSource</dt><dd class="odd_value"></dd><dt class="odd_label">kIRG_JSource</dt><dd class="odd_value"></dd><dt class="odd_label">kIRG_KPSource</dt><dd class="odd_value"></dd><dt class="odd_label">kIRG_KSource</dt><dd class="odd_value"></dd><dt class="odd_label">kIRG_MSource</dt><dd class="odd_value"></dd><dt class="odd_label">kIRG_TSource</dt><dd class="odd_value"></dd><dt class="odd_label">kIRG_USource</dt><dd class="odd_value"></dd><dt class="odd_label">kIRG_VSource</dt><dd class="odd_value"></dd><dt class="odd_label">kOtherNumeric</dt><dd class="odd_value"></dd><dt class="odd_label">kPrimaryNumeric</dt><dd class="odd_value"></dd><dt class="odd_label">kRSUnicode</dt><dd class="odd_value"></dd><dt class="odd_label">lb</dt><dd class="odd_value"></dd><dt class="odd_label">lc</dt><dd class="odd_value"></dd><dt class="odd_label">Line_Break</dt><dd class="odd_value"></dd><dt class="odd_label">LOE</dt><dd class="odd_value"></dd><dt class="odd_label">Logical_Order_Exception</dt><dd class="odd_value"></dd><dt class="odd_label">Lower</dt><dd class="odd_value"></dd><dt class="odd_label">Lowercase</dt><dd class="odd_value"></dd><dt class="odd_label">Lowercase_Mapping</dt><dd class="odd_value"></dd><dt class="odd_label">Math</dt><dd class="odd_value"></dd><dt class="odd_label">na</dt><dd class="odd_value"></dd><dt class="odd_label">na1</dt><dd class="odd_value"></dd><dt class="odd_label">Name</dt><dd class="odd_value"></dd><dt class="odd_label">Name_Alias</dt><dd class="odd_value"></dd><dt class="odd_label">NChar</dt><dd class="odd_value"></dd><dt class="odd_label">NFC_QC</dt><dd class="odd_value"></dd><dt class="odd_label">NFC_Quick_Check</dt><dd class="odd_value"></dd><dt class="odd_label">NFD_QC</dt><dd class="odd_value"></dd><dt class="odd_label">NFD_Quick_Check</dt><dd class="odd_value"></dd><dt class="odd_label">NFKC_Casefold</dt><dd class="odd_value"></dd><dt class="odd_label">NFKC_CF</dt><dd class="odd_value"></dd><dt class="odd_label">NFKC_QC</dt><dd class="odd_value"></dd><dt class="odd_label">NFKC_Quick_Check</dt><dd class="odd_value"></dd><dt class="odd_label">NFKD_QC</dt><dd class="odd_value"></dd><dt class="odd_label">NFKD_Quick_Check</dt><dd class="odd_value"></dd><dt class="odd_label">Noncharacter_Code_Point</dt><dd class="odd_value"></dd><dt class="odd_label">nt</dt><dd class="odd_value"></dd><dt class="odd_label">Numeric_Type</dt><dd class="odd_value"></dd><dt class="odd_label">Numeric_Value</dt><dd class="odd_value"></dd><dt class="odd_label">nv</dt><dd class="odd_value"></dd><dt class="odd_label">OAlpha</dt><dd class="odd_value"></dd><dt class="odd_label">ODI</dt><dd class="odd_value"></dd><dt class="odd_label">OGr_Ext</dt><dd class="odd_value"></dd><dt class="odd_label">OIDC</dt><dd class="odd_value"></dd><dt class="odd_label">OIDS</dt><dd class="odd_value"></dd><dt class="odd_label">OLower</dt><dd class="odd_value"></dd><dt class="odd_label">OMath</dt><dd class="odd_value"></dd><dt class="odd_label">Other_Alphabetic</dt><dd class="odd_value"></dd><dt class="odd_label">Other_Default_Ignorable_Code_Point</dt><dd class="odd_value"></dd><dt class="odd_label">Other_Grapheme_Extend</dt><dd class="odd_value"></dd><dt class="odd_label">Other_ID_Continue</dt><dd class="odd_value"></dd><dt class="odd_label">Other_ID_Start</dt><dd class="odd_value"></dd><dt class="odd_label">Other_Lowercase</dt><dd class="odd_value"></dd><dt class="odd_label">Other_Math</dt><dd class="odd_value"></dd><dt class="odd_label">Other_Uppercase</dt><dd class="odd_value"></dd><dt class="odd_label">OUpper</dt><dd class="odd_value"></dd><dt class="odd_label">Pat_Syn</dt><dd class="odd_value"></dd><dt class="odd_label">Pat_WS</dt><dd class="odd_value"></dd><dt class="odd_label">Pattern_Syntax</dt><dd class="odd_value"></dd><dt class="odd_label">Pattern_White_Space</dt><dd class="odd_value"></dd><dt class="odd_label">PCM</dt><dd class="odd_value"></dd><dt class="odd_label">Prepended_Concatenation_Mark</dt><dd class="odd_value"></dd><dt class="odd_label">QMark</dt><dd class="odd_value"></dd><dt class="odd_label">Quotation_Mark</dt><dd class="odd_value"></dd><dt class="odd_label">Radical</dt><dd class="odd_value"></dd><dt class="odd_label">Regional_Indicator</dt><dd class="odd_value"></dd><dt class="odd_label">RI</dt><dd class="odd_value"></dd><dt class="odd_label">SB</dt><dd class="odd_value"></dd><dt class="odd_label">sc</dt><dd class="odd_value"></dd><dt class="odd_label">scf</dt><dd class="odd_value"></dd><dt class="odd_label">Script</dt><dd class="odd_value"></dd><dt class="odd_label">Script_Extensions</dt><dd class="odd_value"></dd><dt class="odd_label">scx</dt><dd class="odd_value"></dd><dt class="odd_label">SD</dt><dd class="odd_value"></dd><dt class="odd_label">Sentence_Break</dt><dd class="odd_value"></dd><dt class="odd_label">Sentence_Terminal</dt><dd class="odd_value"></dd><dt class="odd_label">Simple_Case_Folding</dt><dd class="odd_value"></dd><dt class="odd_label">Simple_Lowercase_Mapping</dt><dd class="odd_value"></dd><dt class="odd_label">Simple_Titlecase_Mapping</dt><dd class="odd_value"></dd><dt class="odd_label">Simple_Uppercase_Mapping</dt><dd class="odd_value"></dd><dt class="odd_label">slc</dt><dd class="odd_value"></dd><dt class="odd_label">Soft_Dotted</dt><dd class="odd_value"></dd><dt class="odd_label">stc</dt><dd class="odd_value"></dd><dt class="odd_label">STerm</dt><dd class="odd_value"></dd><dt class="odd_label">suc</dt><dd class="odd_value"></dd><dt class="odd_label">tc</dt><dd class="odd_value"></dd><dt class="odd_label">Term</dt><dd class="odd_value"></dd><dt class="odd_label">Terminal_Punctuation</dt><dd class="odd_value"></dd><dt class="odd_label">Titlecase_Mapping</dt><dd class="odd_value"></dd><dt class="odd_label">uc</dt><dd class="odd_value"></dd><dt class="odd_label">UIdeo</dt><dd class="odd_value"></dd><dt class="odd_label">Unicode_1_Name</dt><dd class="odd_value"></dd><dt class="odd_label">Unified_Ideograph</dt><dd class="odd_value"></dd><dt class="odd_label">Upper</dt><dd class="odd_value"></dd><dt class="odd_label">Uppercase</dt><dd class="odd_value"></dd><dt class="odd_label">Uppercase_Mapping</dt><dd class="odd_value"></dd><dt class="odd_label">Variation_Selector</dt><dd class="odd_value"></dd><dt class="odd_label">Vertical_Orientation</dt><dd class="odd_value"></dd><dt class="odd_label">vo</dt><dd class="odd_value"></dd><dt class="odd_label">VS</dt><dd class="odd_value"></dd><dt class="odd_label">WB</dt><dd class="odd_value"></dd><dt class="odd_label">White_Space</dt><dd class="odd_value"></dd><dt class="odd_label">Word_Break</dt><dd class="odd_value"></dd><dt class="odd_label">WSpace</dt><dd class="odd_value"></dd><dt class="odd_label">XID_Continue</dt><dd class="odd_value"></dd><dt class="odd_label">XID_Start</dt><dd class="odd_value"></dd><dt class="odd_label">XIDC</dt><dd class="odd_value"></dd><dt class="odd_label">XIDS</dt><dd class="odd_value"></dd><dt class="odd_label">XO_NFC</dt><dd class="odd_value"></dd><dt class="odd_label">XO_NFD</dt><dd class="odd_value"></dd><dt class="odd_label">XO_NFKC</dt><dd class="odd_value"></dd><dt class="odd_label">XO_NFKD</dt><dd class="odd_value"></dd></dl></td></tr></table></td></tr><tr><td class="odd_label">value<span class="bookmarklink"><a class="bookmarklink" id="tei_att.value" href="#tei_att.value" title="link to this attribute "><span class="invisible"> value</span><span class="pilcrow">¶</span></a></span></td><td class="odd_value">specifies the value of a named Unicode property.<table class="attDef"><tr><td class="odd_label"><span class="label" lang="ja">状態</span> </td><td class="odd_value"><span lang="ja"><span class="required">必須</span></span></td></tr><tr><td class="odd_label"><span lang="ja" class="label">データ型</span> </td><td class="odd_value"><a class="link_element" href="ref-teidata.text.html">teidata.text</a></td></tr></table></td></tr></table></td></tr><tr><td class="wovenodd-col1"><span class="label" lang="ja">上位</span></td><td class="wovenodd-col2"><div class="parent"><div class="specChildren"><div class="specChild"><span class="specChildModule">gaiji: </span><span class="specChildElements"><a class="link_odd_elementSpec" title="文字に関する情報を示す。" href="ref-char.html">char</a> <a class="link_odd_elementSpec" title="グリフの解説を示す。" href="ref-glyph.html">glyph</a></span></div></div></div></td></tr><tr><td class="wovenodd-col1"><span class="label" lang="ja">下位</span></td><td class="wovenodd-col2"><span lang="ja">空要素</span></td></tr><tr><td class="wovenodd-col1"><span class="label" lang="ja">解説</span></td><td class="wovenodd-col2"><!-- --><p>現行のユニコード基準名のリストは、ユニコード規格にある。</p></td></tr><tr><td class="wovenodd-col1"><span class="label" lang="ja">例</span></td><td class="wovenodd-col2"><div id="index-egXML-d54e59521" class="pre egXML_valid"><span class="element">&lt;char <span class="attribute">xml:id</span>="<span class="attributevalue">U4EBA_circled</span>"&gt;</span><br/> <span class="element">&lt;unicodeProp <span class="attribute">name</span>="<span class="attributevalue">Decomposition_Mapping</span>"<br/>  <span class="attribute">value</span>="<span class="attributevalue">circle</span>" <span class="attribute">version</span>="<span class="attributevalue">12.1</span>"/&gt;</span><br/> <span class="element">&lt;localProp <span class="attribute">name</span>="<span class="attributevalue">Name</span>"<br/>  <span class="attribute">value</span>="<span class="attributevalue">CIRCLED IDEOGRAPH 4EBA</span>"/&gt;</span><br/> <span class="element">&lt;localProp <span class="attribute">name</span>="<span class="attributevalue">daikanwa</span>" <span class="attribute">value</span>="<span class="attributevalue">36</span>"/&gt;</span><br/> <span class="element">&lt;mapping <span class="attribute">type</span>="<span class="attributevalue">standard</span>"&gt;</span>人<span class="element">&lt;/mapping&gt;</span><br/><span class="element">&lt;/char&gt;</span><div style="float: right;"><a href="examples-unicodeProp.html">一括表示</a> </div></div></td></tr><tr><td class="wovenodd-col1"><span class="label" lang="ja">Content model</span></td><td class="wovenodd-col2"><pre class="eg"><span class="element">&lt;content&gt;</span><br/> <span class="element">&lt;empty/&gt;</span><br/><span class="element">&lt;/content&gt;</span></pre></td></tr><tr><td class="wovenodd-col1"><span class="label" lang="ja">宣言</span></td><td class="wovenodd-col2"><div class="displayRelax"><button class="displayRelaxButton"><span class="RNG_Compact">XML表記</span><span class="RNG_XML">簡易表記</span></button><pre class="RNG_XML"><span class="element">&lt;rng:element <span class="attribute">name</span>="<span class="attributevalue">unicodeProp</span>"&gt;</span><br/> <span class="element">&lt;rng:ref <span class="attribute">name</span>="<span class="attributevalue">att.global.attributes</span>"/&gt;</span><br/> <span class="element">&lt;rng:ref <span class="attribute">name</span>="<span class="attributevalue">att.global.rendition.attributes</span>"/&gt;</span><br/> <span class="element">&lt;rng:ref <span class="attribute">name</span>="<span class="attributevalue">att.global.linking.attributes</span>"/&gt;</span><br/> <span class="element">&lt;rng:ref <span class="attribute">name</span>="<span class="attributevalue">att.global.analytic.attributes</span>"/&gt;</span><br/> <span class="element">&lt;rng:ref <span class="attribute">name</span>="<span class="attributevalue">att.global.facs.attributes</span>"/&gt;</span><br/> <span class="element">&lt;rng:ref <span class="attribute">name</span>="<span class="attributevalue">att.global.change.attributes</span>"/&gt;</span><br/> <span class="element">&lt;rng:ref <span class="attribute">name</span>="<span class="attributevalue">att.global.responsibility.attributes</span>"/&gt;</span><br/> <span class="element">&lt;rng:ref <span class="attribute">name</span>="<span class="attributevalue">att.global.source.attributes</span>"/&gt;</span><br/> <span class="element">&lt;rng:ref <span class="attribute">name</span>="<span class="attributevalue">att.gaijiProp.attribute.version</span>"/&gt;</span><br/> <span class="element">&lt;rng:attribute <span class="attribute">name</span>="<span class="attributevalue">name</span>"&gt;</span><br/>  <span class="element">&lt;rng:choice&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Age<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>AHex<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Alpha<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Alphabetic<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>ASCII_Hex_Digit<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>bc<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Bidi_C<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Bidi_Class<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Bidi_Control<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Bidi_M<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Bidi_Mirrored<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Bidi_Mirroring_Glyph<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Bidi_Paired_Bracket<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Bidi_Paired_Bracket_Type<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>blk<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Block<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>bmg<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>bpb<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>bpt<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Canonical_Combining_Class<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Case_Folding<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Case_Ignorable<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Cased<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>ccc<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>CE<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>cf<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Changes_When_Casefolded<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Changes_When_Casemapped<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Changes_When_Lowercased<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Changes_When_NFKC_Casefolded<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Changes_When_Titlecased<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Changes_When_Uppercased<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>CI<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Comp_Ex<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Composition_Exclusion<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>CWCF<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>CWCM<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>CWKCF<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>CWL<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>CWT<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>CWU<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Dash<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Decomposition_Mapping<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Decomposition_Type<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Default_Ignorable_Code_Point<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Dep<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Deprecated<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>DI<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Dia<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Diacritic<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>dm<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>dt<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>ea<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>East_Asian_Width<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>EqUIdeo<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Equivalent_Unified_Ideograph<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Expands_On_NFC<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Expands_On_NFD<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Expands_On_NFKC<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Expands_On_NFKD<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Ext<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Extender<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>FC_NFKC<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>FC_NFKC_Closure<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Full_Composition_Exclusion<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>gc<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>GCB<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>General_Category<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Gr_Base<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Gr_Ext<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Gr_Link<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Grapheme_Base<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Grapheme_Cluster_Break<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Grapheme_Extend<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Grapheme_Link<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Hangul_Syllable_Type<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Hex<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Hex_Digit<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>hst<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Hyphen<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>ID_Continue<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>ID_Start<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>IDC<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Ideo<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Ideographic<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>IDS<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>IDS_Binary_Operator<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>IDS_Trinary_Operator<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>IDSB<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>IDST<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Indic_Positional_Category<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Indic_Syllabic_Category<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>InPC<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>InSC<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>isc<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>ISO_Comment<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Jamo_Short_Name<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>jg<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Join_C<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Join_Control<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Joining_Group<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Joining_Type<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>JSN<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>jt<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kAccountingNumeric<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kCompatibilityVariant<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kIICore<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kIRG_GSource<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kIRG_HSource<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kIRG_JSource<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kIRG_KPSource<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kIRG_KSource<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kIRG_MSource<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kIRG_TSource<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kIRG_USource<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kIRG_VSource<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kOtherNumeric<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kPrimaryNumeric<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>kRSUnicode<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>lb<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>lc<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Line_Break<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>LOE<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Logical_Order_Exception<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Lower<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Lowercase<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Lowercase_Mapping<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Math<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>na<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>na1<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Name<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Name_Alias<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>NChar<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>NFC_QC<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>NFC_Quick_Check<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>NFD_QC<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>NFD_Quick_Check<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>NFKC_Casefold<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>NFKC_CF<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>NFKC_QC<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>NFKC_Quick_Check<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>NFKD_QC<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>NFKD_Quick_Check<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Noncharacter_Code_Point<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>nt<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Numeric_Type<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Numeric_Value<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>nv<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>OAlpha<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>ODI<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>OGr_Ext<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>OIDC<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>OIDS<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>OLower<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>OMath<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Other_Alphabetic<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Other_Default_Ignorable_Code_Point<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Other_Grapheme_Extend<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Other_ID_Continue<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Other_ID_Start<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Other_Lowercase<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Other_Math<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Other_Uppercase<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>OUpper<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Pat_Syn<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Pat_WS<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Pattern_Syntax<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Pattern_White_Space<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>PCM<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Prepended_Concatenation_Mark<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>QMark<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Quotation_Mark<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Radical<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Regional_Indicator<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>RI<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>SB<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>sc<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>scf<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Script<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Script_Extensions<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>scx<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>SD<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Sentence_Break<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Sentence_Terminal<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Simple_Case_Folding<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Simple_Lowercase_Mapping<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Simple_Titlecase_Mapping<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Simple_Uppercase_Mapping<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>slc<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Soft_Dotted<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>stc<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>STerm<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>suc<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>tc<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Term<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Terminal_Punctuation<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Titlecase_Mapping<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>uc<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>UIdeo<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Unicode_1_Name<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Unified_Ideograph<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Upper<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Uppercase<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Uppercase_Mapping<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Variation_Selector<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Vertical_Orientation<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>vo<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>VS<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>WB<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>White_Space<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>Word_Break<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>WSpace<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>XID_Continue<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>XID_Start<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>XIDC<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>XIDS<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>XO_NFC<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>XO_NFD<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>XO_NFKC<span class="element">&lt;/rng:value&gt;</span><br/>   <span class="element">&lt;rng:value&gt;</span>XO_NFKD<span class="element">&lt;/rng:value&gt;</span><br/>  <span class="element">&lt;/rng:choice&gt;</span><br/> <span class="element">&lt;/rng:attribute&gt;</span><br/> <span class="element">&lt;rng:attribute <span class="attribute">name</span>="<span class="attributevalue">value</span>"&gt;</span><br/>  <span class="element">&lt;rng:ref <span class="attribute">name</span>="<span class="attributevalue">teidata.text</span>"/&gt;</span><br/> <span class="element">&lt;/rng:attribute&gt;</span><br/> <span class="element">&lt;rng:empty/&gt;</span><br/><span class="element">&lt;/rng:element&gt;</span></pre><pre class="RNG_Compact">
+<span class="rnc_keyword">element</span> <span class="rnc_nc">unicodeProp</span>
+{
+   <a class="link_odd" title="TEI符号化スキーム中の全要素に共通する属性を示す。" href="ref-att.global.html">att.global.attributes</a>,
+   <a class="link_odd" title="TEIの符号化スキーマにおけるすべての要素に共通するレンダリング属性を提供する。" href="ref-att.global.rendition.html">att.global.rendition.attributes</a>,
+   <a class="link_odd" title="ハイパーテキストリンクの属性セットを提供する。" href="ref-att.global.linking.html">att.global.linking.attributes</a>,
+   <a class="link_odd" title="任意のテキスト部分への分析・解釈に関連するグローバル属性を示す。" href="ref-att.global.analytic.html">att.global.analytic.attributes</a>,
+   <a class="link_odd" title="転写されたテキストを含む要素と、そのテキストを表す画像の全部または一部との間の対応を表すために使用される属性を提供する。" href="ref-att.global.facs.html">att.global.facs.attributes</a>,
+   <a class="link_odd" title="そのメンバ要素が関連する1つ以上の状態または改定を指定できるように、@change属性を提供する。" href="ref-att.global.change.html">att.global.change.attributes</a>,
+   <a class="link_odd" title="テキストやマークアップ、あるいはマークアップによって示されたものの何らかの側面についての責任者と、それに関する確信の度合を示す属性を提供する。" href="ref-att.global.responsibility.html">att.global.responsibility.attributes</a>,
+   <a class="link_odd" title="外部ソースを参照する要素によって用いられる属性を示す。" href="ref-att.global.source.html">att.global.source.attributes</a>,
+   <a class="link_odd" title="" href="ref-att.gaijiProp.html">att.gaijiProp.attribute.version</a>,
+   <span class="rnc_keyword">attribute</span> <span class="rnc_nc">name</span>
+   {
+      "Age"
+    | "AHex"
+    | "Alpha"
+    | "Alphabetic"
+    | "ASCII_Hex_Digit"
+    | "bc"
+    | "Bidi_C"
+    | "Bidi_Class"
+    | "Bidi_Control"
+    | "Bidi_M"
+    | "Bidi_Mirrored"
+    | "Bidi_Mirroring_Glyph"
+    | "Bidi_Paired_Bracket"
+    | "Bidi_Paired_Bracket_Type"
+    | "blk"
+    | "Block"
+    | "bmg"
+    | "bpb"
+    | "bpt"
+    | "Canonical_Combining_Class"
+    | "Case_Folding"
+    | "Case_Ignorable"
+    | "Cased"
+    | "ccc"
+    | "CE"
+    | "cf"
+    | "Changes_When_Casefolded"
+    | "Changes_When_Casemapped"
+    | "Changes_When_Lowercased"
+    | "Changes_When_NFKC_Casefolded"
+    | "Changes_When_Titlecased"
+    | "Changes_When_Uppercased"
+    | "CI"
+    | "Comp_Ex"
+    | "Composition_Exclusion"
+    | "CWCF"
+    | "CWCM"
+    | "CWKCF"
+    | "CWL"
+    | "CWT"
+    | "CWU"
+    | "Dash"
+    | "Decomposition_Mapping"
+    | "Decomposition_Type"
+    | "Default_Ignorable_Code_Point"
+    | "Dep"
+    | "Deprecated"
+    | "DI"
+    | "Dia"
+    | "Diacritic"
+    | "dm"
+    | "dt"
+    | "ea"
+    | "East_Asian_Width"
+    | "EqUIdeo"
+    | "Equivalent_Unified_Ideograph"
+    | "Expands_On_NFC"
+    | "Expands_On_NFD"
+    | "Expands_On_NFKC"
+    | "Expands_On_NFKD"
+    | "Ext"
+    | "Extender"
+    | "FC_NFKC"
+    | "FC_NFKC_Closure"
+    | "Full_Composition_Exclusion"
+    | "gc"
+    | "GCB"
+    | "General_Category"
+    | "Gr_Base"
+    | "Gr_Ext"
+    | "Gr_Link"
+    | "Grapheme_Base"
+    | "Grapheme_Cluster_Break"
+    | "Grapheme_Extend"
+    | "Grapheme_Link"
+    | "Hangul_Syllable_Type"
+    | "Hex"
+    | "Hex_Digit"
+    | "hst"
+    | "Hyphen"
+    | "ID_Continue"
+    | "ID_Start"
+    | "IDC"
+    | "Ideo"
+    | "Ideographic"
+    | "IDS"
+    | "IDS_Binary_Operator"
+    | "IDS_Trinary_Operator"
+    | "IDSB"
+    | "IDST"
+    | "Indic_Positional_Category"
+    | "Indic_Syllabic_Category"
+    | "InPC"
+    | "InSC"
+    | "isc"
+    | "ISO_Comment"
+    | "Jamo_Short_Name"
+    | "jg"
+    | "Join_C"
+    | "Join_Control"
+    | "Joining_Group"
+    | "Joining_Type"
+    | "JSN"
+    | "jt"
+    | "kAccountingNumeric"
+    | "kCompatibilityVariant"
+    | "kIICore"
+    | "kIRG_GSource"
+    | "kIRG_HSource"
+    | "kIRG_JSource"
+    | "kIRG_KPSource"
+    | "kIRG_KSource"
+    | "kIRG_MSource"
+    | "kIRG_TSource"
+    | "kIRG_USource"
+    | "kIRG_VSource"
+    | "kOtherNumeric"
+    | "kPrimaryNumeric"
+    | "kRSUnicode"
+    | "lb"
+    | "lc"
+    | "Line_Break"
+    | "LOE"
+    | "Logical_Order_Exception"
+    | "Lower"
+    | "Lowercase"
+    | "Lowercase_Mapping"
+    | "Math"
+    | "na"
+    | "na1"
+    | "Name"
+    | "Name_Alias"
+    | "NChar"
+    | "NFC_QC"
+    | "NFC_Quick_Check"
+    | "NFD_QC"
+    | "NFD_Quick_Check"
+    | "NFKC_Casefold"
+    | "NFKC_CF"
+    | "NFKC_QC"
+    | "NFKC_Quick_Check"
+    | "NFKD_QC"
+    | "NFKD_Quick_Check"
+    | "Noncharacter_Code_Point"
+    | "nt"
+    | "Numeric_Type"
+    | "Numeric_Value"
+    | "nv"
+    | "OAlpha"
+    | "ODI"
+    | "OGr_Ext"
+    | "OIDC"
+    | "OIDS"
+    | "OLower"
+    | "OMath"
+    | "Other_Alphabetic"
+    | "Other_Default_Ignorable_Code_Point"
+    | "Other_Grapheme_Extend"
+    | "Other_ID_Continue"
+    | "Other_ID_Start"
+    | "Other_Lowercase"
+    | "Other_Math"
+    | "Other_Uppercase"
+    | "OUpper"
+    | "Pat_Syn"
+    | "Pat_WS"
+    | "Pattern_Syntax"
+    | "Pattern_White_Space"
+    | "PCM"
+    | "Prepended_Concatenation_Mark"
+    | "QMark"
+    | "Quotation_Mark"
+    | "Radical"
+    | "Regional_Indicator"
+    | "RI"
+    | "SB"
+    | "sc"
+    | "scf"
+    | "Script"
+    | "Script_Extensions"
+    | "scx"
+    | "SD"
+    | "Sentence_Break"
+    | "Sentence_Terminal"
+    | "Simple_Case_Folding"
+    | "Simple_Lowercase_Mapping"
+    | "Simple_Titlecase_Mapping"
+    | "Simple_Uppercase_Mapping"
+    | "slc"
+    | "Soft_Dotted"
+    | "stc"
+    | "STerm"
+    | "suc"
+    | "tc"
+    | "Term"
+    | "Terminal_Punctuation"
+    | "Titlecase_Mapping"
+    | "uc"
+    | "UIdeo"
+    | "Unicode_1_Name"
+    | "Unified_Ideograph"
+    | "Upper"
+    | "Uppercase"
+    | "Uppercase_Mapping"
+    | "Variation_Selector"
+    | "Vertical_Orientation"
+    | "vo"
+    | "VS"
+    | "WB"
+    | "White_Space"
+    | "Word_Break"
+    | "WSpace"
+    | "XID_Continue"
+    | "XID_Start"
+    | "XIDC"
+    | "XIDS"
+    | "XO_NFC"
+    | "XO_NFD"
+    | "XO_NFKC"
+    | "XO_NFKD"
+   },
+   attribute value { <a class="link_odd" title="" href="ref-teidata.text.html">teidata.text</a> },
+   empty
+}</pre></div></td></tr></table></div></div><div class="stdfooter autogenerated"><p>
+    [<a href="../../en/html/ref-unicodeProp.html">English</a>]
+    [<a href="../../de/html/ref-unicodeProp.html">Deutsch</a>]
+    [<a href="../../es/html/ref-unicodeProp.html">Español</a>]
+    [<a href="../../it/html/ref-unicodeProp.html">Italiano</a>]
+    [<a href="../../fr/html/ref-unicodeProp.html">Français</a>]
+    [<a href="../../ja/html/ref-unicodeProp.html">日本語</a>]
+    [<a href="../../ko/html/ref-unicodeProp.html">한국어</a>]
+    [<a href="../../zh-TW/html/ref-unicodeProp.html">中文</a>]
+    </p><hr/><div class="footer"><a class="plain" href="https://tei-c.org/about/">TEI Consortium</a> | <a class="plain" href="https://tei-c.org/about/contact/">ご意見・ご感想</a></div><hr/><address><br/>TEI Guidelines <a class="link_ref" href="AB.html#ABTEI4" title="Future Developments and Version Numbers">Version</a> <a class="link_ref" href="../../readme-4.5.0.html">4.5.0</a>. Last updated on <span class="date">25th October 2022</span>, revision <a class="link_ref" href="https://github.com/TEIC/TEI/commit/871244cf1">871244cf1</a>. This page generated on 2023-01-01T06:02:28Z.</address></div></body></html>

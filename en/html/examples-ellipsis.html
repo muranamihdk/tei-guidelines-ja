@@ -1,0 +1,109 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml"><!--THIS IS A GENERATED FILE. DO NOT EDIT (98) --><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Example: &lt;ellipsis&gt; (deliberately marked omission) </title><link href="guidelines.css" rel="stylesheet" type="text/css"/><link href="odd.css" rel="stylesheet" type="text/css"/><meta content="Text Encoding Initiative Consortium XSLT stylesheets" name="generator"/><meta property="Language" content="en"/><meta property="DC.Title" content="Example: ellipsis (deliberately marked omission) "/><meta property="DC.Language" content="SCHEME=iso639 en"/><meta property="DC.Creator.Address" content="tei@oucs.ox.ac.uk"/><meta charset="utf-8"/><script type="text/javascript" src="jquery-3.5.1.min.js"></script><script type="text/javascript" src="columnlist.js"></script><script type="text/javascript" src="popupFootnotes.js"></script><!--CAMPAIGN JS--><script type="text/javascript">
+        $(function() {
+         $('ul.attrefs-class').columnizeList({cols:3,width:30,unit:'%'});
+         $('ul.attrefs-element').columnizeList({cols:3,width:30,unit:'%'});
+         $(".displayRelaxButton").click(function() {
+           $(this).parent().find('.RNG_XML').toggle();
+           $(this).parent().find('.RNG_Compact').toggle();
+         });
+         $(".tocTree .showhide").click(function() {
+          $(this).find(".tocShow,.tocHide").toggle();
+          $(this).parent().find("ul.continuedtoc").toggle();
+          });
+        })
+    </script><script type="text/javascript">
+      $(function() {
+        $('.outOfDateTranslation').append(`<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" aria-label="" viewBox="0 0 16 16" style="position:absolute; top:2px; right:2px; color:red"><title></title><path d="M6.146 7.146a.5.5 0 0 1 .708 0L8 8.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 9l1.147 1.146a.5.5 0 0 1-.708.708L8 9.707l-1.146 1.147a.5.5 0 0 1-.708-.708L7.293 9 6.146 7.854a.5.5 0 0 1 0-.708z"></path><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"></path></svg>`);
+      });
+    </script><script type="text/javascript"><!--
+var displayXML=0;
+states=new Array()
+states[0]="element-a"
+states[1]="element-b"
+states[2]="element-c"
+states[3]="element-d"
+states[4]="element-e"
+states[5]="element-f"
+states[6]="element-g"
+states[7]="element-h"
+states[8]="element-i"
+states[9]="element-j"
+states[10]="element-k"
+states[11]="element-l"
+states[12]="element-m"
+states[13]="element-n"
+states[14]="element-o"
+states[15]="element-p"
+states[16]="element-q"
+states[17]="element-r"
+states[18]="element-s"
+states[19]="element-t"
+states[20]="element-u"
+states[21]="element-v"
+states[22]="element-w"
+states[23]="element-x"
+states[24]="element-y"
+states[25]="element-z"
+
+function startUp() {
+
+}
+
+function hideallExcept(elm) {
+for (var i = 0; i < states.length; i++) {
+ var layer;
+ if (layer = document.getElementById(states[i]) ) {
+  if (states[i] != elm) {
+    layer.style.display = "none";
+  }
+  else {
+   layer.style.display = "block";
+      }
+  }
+ }
+ var mod;
+ if ( mod = document.getElementById('byMod') ) {
+     mod.style.display = "none";
+ }
+}
+
+function showall() {
+ for (var i = 0; i < states.length; i++) {
+   var layer;
+   if (layer = document.getElementById(states[i]) ) {
+      layer.style.display = "block";
+      }
+  }
+}
+
+function showByMod() {
+  hideallExcept('');
+  var mod;
+  if (mod = document.getElementById('byMod') ) {
+     mod.style.display = "block";
+     }
+}
+
+	--></script></head><body id="TOP"><div id="container"><header id="banner"><a href="https://tei-c.org"><img src="Images/banner.jpg" alt="Text Encoding Initiative logo and banner"/></a><nav role="navigation"></nav></header></div><div class="mainhead"><h1>P5: 
+    Guidelines for Electronic Text Encoding and Interchange</h1><p>Version 4.5.0. Last updated on
+        25th October 2022, revision 871244cf1</p></div><div class="main-content"><div class="miniTOC miniTOC_right"><ul class="subtoc"><li class="subtoc"></li><li class="subtoc"></li><li class="subtoc"><a class="navigation" href="index.html">Home</a></li><li class="subtoc"><a class="navigation" href="REF-ELEMENTS.html">C Elements</a></li></ul></div><h3>Example<a href="ref-ellipsis.html">: &lt;ellipsis&gt; </a>(deliberately marked omission) </h3><p>These search results reproduce every example of the
+              use of &lt;ellipsis&gt; in the Guidelines, including all localised
+              and translated versions. In some cases, the examples have been drawn
+              from discussion of other elements in the Guidelines and illustrating
+              the use of &lt;ellipsis&gt;
+              is not the main 
+              focus of the passage in question. In other cases, examples may be direct 
+              translations of each other, and hence identical from the perspective of 
+              their encoding.</p><ul><li><b><a href="#CO"><span class="headingNumber">3 </span><span class="head">Elements Available in All TEI Documents</span><em> (defining module)</em></a></b></li></ul><h4 id="CO"><span class="headingNumber">3 </span><span class="head">Elements Available in All TEI Documents</span></h4><hr/><p><a href="CO.html#COEDADD"><span class="headingNumber">3.5.3 </span><span class="head">Additions, Deletions, and Omissions</span></a></p><div id="index-egXML-d39e30711" class="pre egXML_valid"><span class="element">&lt;table <span class="attribute">rows</span>="<span class="attributevalue">3</span>" <span class="attribute">cols</span>="<span class="attributevalue">2</span>"&gt;</span><br/> <span class="element">&lt;head&gt;</span>Tent supplies<span class="element">&lt;/head&gt;</span><br/> <span class="element">&lt;row&gt;</span><br/>  <span class="element">&lt;cell&gt;</span><br/>   <span class="element">&lt;name&gt;</span>nylon tent<span class="element">&lt;/name&gt;</span><br/>  <span class="element">&lt;/cell&gt;</span><br/>  <span class="element">&lt;cell&gt;</span><br/>   <span class="element">&lt;num&gt;</span>1<span class="element">&lt;/num&gt;</span><br/>  <span class="element">&lt;/cell&gt;</span><br/> <span class="element">&lt;/row&gt;</span><br/> <span class="element">&lt;row&gt;</span><br/>  <span class="element">&lt;cell&gt;</span><br/>   <span class="element">&lt;name&gt;</span>steel stakes<span class="element">&lt;/name&gt;</span><br/>  <span class="element">&lt;/cell&gt;</span><br/>  <span class="element">&lt;cell&gt;</span><br/>   <span class="element">&lt;num&gt;</span>6<span class="element">&lt;/num&gt;</span><br/>  <span class="element">&lt;/cell&gt;</span><br/> <span class="element">&lt;/row&gt;</span><br/> <span class="element">&lt;row&gt;</span><br/>  <span class="element">&lt;cell&gt;</span><br/>   <span class="element">&lt;name&gt;</span>fiberglass poles<span class="element">&lt;/name&gt;</span><br/>  <span class="element">&lt;/cell&gt;</span><br/>  <span class="element">&lt;cell&gt;</span><br/>   <span class="element">&lt;<span class="highlightelementname">ellipsis</span>&gt;</span><br/>    <span class="element">&lt;metamark <span class="attribute">function</span>="<span class="attributevalue">ellipsis</span>"&gt;</span>"<span class="element">&lt;/metamark&gt;</span><br/>    <span class="element">&lt;supplied&gt;</span><br/>     <span class="element">&lt;num&gt;</span>6<span class="element">&lt;/num&gt;</span><br/>    <span class="element">&lt;/supplied&gt;</span><br/>   <span class="element">&lt;/<span class="highlightelementname">ellipsis</span>&gt;</span><br/>  <span class="element">&lt;/cell&gt;</span><br/> <span class="element">&lt;/row&gt;</span><br/><span class="element">&lt;/table&gt;</span><div style="float: right;"><a href="BIB.html#NONE">bibliography</a> </div></div><hr/><p><a href="CO.html#COEDADD"><span class="headingNumber">3.5.3 </span><span class="head">Additions, Deletions, and Omissions</span></a></p><div id="index-egXML-d39e30738" class="pre egXML_valid"><span class="element">&lt;p&gt;</span>I leave Dublin to-morrow for M<span class="element">&lt;<span class="highlightelementname">ellipsis</span>&gt;</span><br/>  <span class="element">&lt;metamark&gt;</span>——<span class="element">&lt;/metamark&gt;</span><br/> <span class="element">&lt;/<span class="highlightelementname">ellipsis</span>&gt;</span> house. It is situated in the county of <span class="element">&lt;<span class="highlightelementname">ellipsis</span>&gt;</span><br/>  <span class="element">&lt;metamark&gt;</span>——<span class="element">&lt;/metamark&gt;</span><br/> <span class="element">&lt;/<span class="highlightelementname">ellipsis</span>&gt;</span>, on the north-west coast of <span class="element">&lt;placeName&gt;</span>Connaught<span class="element">&lt;/placeName&gt;</span>, which I am told is the classic ground of <span class="element">&lt;placeName&gt;</span>Ireland<span class="element">&lt;/placeName&gt;</span>.<span class="element">&lt;/p&gt;</span><div style="float: right;"><a href="BIB.html#COEDADD-eg-90">bibliography</a> </div></div><hr/><p><a href="CO.html#COEDADD"><span class="headingNumber">3.5.3 </span><span class="head">Additions, Deletions, and Omissions</span></a></p><div id="index-egXML-d39e30767" class="pre egXML_valid"><span class="element">&lt;lg&gt;</span><br/> <span class="element">&lt;l&gt;</span>Amıgas sey eu be<span class="element">&lt;ex&gt;</span>n<span class="element">&lt;/ex&gt;</span> dunha molher<span class="element">&lt;/l&gt;</span><br/> <span class="element">&lt;l&gt;</span>Que se trabalha de uosco buscar<span class="element">&lt;/l&gt;</span><br/> <span class="element">&lt;l&gt;</span>Mal a uossamigo polo matar<span class="element">&lt;/l&gt;</span><br/> <span class="element">&lt;l&gt;</span>Mays todaquestamiga ela q<span class="element">&lt;ex&gt;</span>ue<span class="element">&lt;/ex&gt;</span>r<span class="element">&lt;/l&gt;</span><br/> <span class="element">&lt;metamark <span class="attribute">function</span>="<span class="attributevalue">signalChorus</span>"&gt;</span>꜒<span class="element">&lt;/metamark&gt;</span><br/> <span class="element">&lt;l&gt;</span>Por q<span class="element">&lt;ex&gt;</span>ue<span class="element">&lt;/ex&gt;</span> nu<span class="element">&lt;ex&gt;</span>n<span class="element">&lt;/ex&gt;</span>ca co<span class="element">&lt;ex&gt;</span>n<span class="element">&lt;/ex&gt;</span> el pode poer<span class="element">&lt;/l&gt;</span><br/> <span class="element">&lt;l&gt;</span>Queo podesse por amigauer<span class="element">&lt;/l&gt;</span><br/><span class="element">&lt;/lg&gt;</span><br/><span class="element">&lt;lg&gt;</span><br/> <span class="element">&lt;l&gt;</span>E buscalhi co<span class="element">&lt;ex&gt;</span>n<span class="element">&lt;/ex&gt;</span> uosco q<span class="element">&lt;ex&gt;</span>ua<span class="element">&lt;/ex&gt;</span>nto mal<span class="element">&lt;/l&gt;</span><br/> <span class="element">&lt;l&gt;</span>Ela mays pode aq<span class="element">&lt;ex&gt;</span>ue<span class="element">&lt;/ex&gt;</span>sto sei eu<span class="element">&lt;/l&gt;</span><br/> <span class="element">&lt;l&gt;</span>E todaq<span class="element">&lt;ex&gt;</span>ue<span class="element">&lt;/ex&gt;</span>stela faz polo seu<span class="element">&lt;/l&gt;</span><br/> <span class="element">&lt;l&gt;</span>E p<span class="element">&lt;ex&gt;</span>or<span class="element">&lt;/ex&gt;</span>este p<span class="element">&lt;unclear&gt;</span>ẏ<span class="element">&lt;/unclear&gt;</span>te non por al<span class="element">&lt;/l&gt;</span><br/> <span class="element">&lt;lb/&gt;</span><br/> <span class="element">&lt;metamark <span class="attribute">function</span>="<span class="attributevalue">signalChorus</span>"&gt;</span>꜒<span class="element">&lt;/metamark&gt;</span><br/> <span class="element">&lt;l <span class="attribute">rend</span>="<span class="attributevalue">nobreak</span>" <span class="attribute">part</span>="<span class="attributevalue">I</span>"&gt;</span>Por q<span class="element">&lt;ex&gt;</span>ue<span class="element">&lt;/ex&gt;</span> nu<span class="element">&lt;ex&gt;</span>n<span class="element">&lt;/ex&gt;</span>ca<span class="element">&lt;/l&gt;</span><br/> <span class="element">&lt;<span class="highlightelementname">ellipsis</span>&gt;</span><br/>  <span class="element">&lt;metamark <span class="attribute">rend</span>="<span class="attributevalue">nobreak</span>"<br/>   <span class="attribute">function</span>="<span class="attributevalue">ellipsis</span>"&gt;</span>·:—<span class="element">&lt;/metamark&gt;</span><br/>  <span class="element">&lt;supplied&gt;</span><br/>   <span class="element">&lt;l <span class="attribute">rend</span>="<span class="attributevalue">nobreak</span>" <span class="attribute">part</span>="<span class="attributevalue">F</span>"&gt;</span>co<span class="element">&lt;ex&gt;</span>n<span class="element">&lt;/ex&gt;</span> el pode poer<span class="element">&lt;/l&gt;</span><br/>   <span class="element">&lt;l&gt;</span>Queo podesse por amigauer<span class="element">&lt;/l&gt;</span><br/>  <span class="element">&lt;/supplied&gt;</span><br/> <span class="element">&lt;/<span class="highlightelementname">ellipsis</span>&gt;</span><br/><span class="element">&lt;/lg&gt;</span><div style="float: right;"><a href="BIB.html#COEDADD-eg-93">bibliography</a> </div></div><hr/><p><a href="../../en/html/ref-ellipsis.html">&lt;ellipsis&gt;</a></p><div id="index-egXML-d39e31371" class="pre egXML_valid"><span class="element">&lt;lg&gt;</span><br/> <span class="element">&lt;l&gt;</span>What projects men make—what queer turns they take,<span class="element">&lt;/l&gt;</span><br/> <span class="element">&lt;l&gt;</span>Since <span class="element">&lt;emph&gt;</span>steam<span class="element">&lt;/emph&gt;</span> has improved our condition;<span class="element">&lt;/l&gt;</span><br/> <span class="element">&lt;l&gt;</span>They never are still, but must cure or must kill<span class="element">&lt;/l&gt;</span><br/> <span class="element">&lt;l&gt;</span>With steam physic or steam ammunition.<span class="element">&lt;/l&gt;</span><br/> <span class="element">&lt;l&gt;</span>But a short time ago, to a quack you would go,<span class="element">&lt;/l&gt;</span><br/> <span class="element">&lt;l&gt;</span>To steam a fat man to a thinner;<span class="element">&lt;/l&gt;</span><br/> <span class="element">&lt;l&gt;</span>Now changed from all that, if you wish to get <span class="element">&lt;emph&gt;</span>fat<span class="element">&lt;/emph&gt;</span>,<span class="element">&lt;/l&gt;</span><br/> <span class="element">&lt;l&gt;</span>Come to Barton’s and eat a <span class="element">&lt;emph&gt;</span>steam dinner!<span class="element">&lt;/emph&gt;</span><br/> <span class="element">&lt;/l&gt;</span><br/> <span class="element">&lt;l&gt;</span>Oh dear! think of a scheme, odd though it seem—<span class="element">&lt;/l&gt;</span><br/> <span class="element">&lt;l&gt;</span>I’m sure ’twill succeed if you make it by steam.<span class="element">&lt;/l&gt;</span><br/><span class="element">&lt;/lg&gt;</span><br/><span class="element">&lt;lg&gt;</span><br/> <span class="element">&lt;l&gt;</span>You may sleep, you may dream, you may travel by steam,<span class="element">&lt;/l&gt;</span><br/> <span class="element">&lt;l&gt;</span>For the outcry is still to go faster;<span class="element">&lt;/l&gt;</span><br/> <span class="element">&lt;l&gt;</span>And what does it reck, should you e’en break your neck,<span class="element">&lt;/l&gt;</span><br/> <span class="element">&lt;l&gt;</span>If ’tis <span class="element">&lt;emph&gt;</span>steam<span class="element">&lt;/emph&gt;</span> that brings on the disaster?<span class="element">&lt;/l&gt;</span><br/> <span class="element">&lt;<span class="highlightelementname">ellipsis</span> <span class="attribute">resp</span>="<span class="attributevalue">#ChambersEdnbrghJrnl1880</span>"&gt;</span><br/>  <span class="element">&lt;metamark <span class="attribute">function</span>="<span class="attributevalue">multilineEllipsis</span>"&gt;</span> * * * * <span class="element">&lt;/metamark&gt;</span><br/>  <span class="element">&lt;desc <span class="attribute">resp</span>="<span class="attributevalue">#teiProjectEditor2021</span>"&gt;</span>The printer omits four lines here,<br/>     skipping the second half of the second octave, before the refrain.<span class="element">&lt;/desc&gt;</span><br/> <span class="element">&lt;/<span class="highlightelementname">ellipsis</span>&gt;</span><br/> <span class="element">&lt;l&gt;</span>Oh dear! think of a scheme, odd though it seem—<span class="element">&lt;/l&gt;</span><br/> <span class="element">&lt;l&gt;</span>I’m sure ’twill succeed if you make it by steam.<span class="element">&lt;/l&gt;</span><br/><span class="element">&lt;/lg&gt;</span><div style="float: right;"><a href="BIB.html#COEDADD-eg-91">bibliography</a> </div><div style="float: right;"><a href="examples-ellipsis.html">Show all</a> </div></div><hr/><p><a href="../../en/html/ref-ellipsis.html">&lt;ellipsis&gt;</a></p><div id="index-egXML-d39e31407" class="pre egXML_valid"><span class="element">&lt;lg&gt;</span><br/> <span class="element">&lt;l&gt;</span>You think you’ve lost your love <span class="element">&lt;/l&gt;</span><br/> <span class="element">&lt;l&gt;</span>Well, I saw her yesterday <span class="element">&lt;/l&gt;</span><br/> <span class="element">&lt;l&gt;</span>It’s you she's thinking of <span class="element">&lt;/l&gt;</span><br/> <span class="element">&lt;l&gt;</span>And she told me what to say<span class="element">&lt;/l&gt;</span><br/><span class="element">&lt;/lg&gt;</span><br/><span class="element">&lt;lg <span class="attribute">xml:id</span>="<span class="attributevalue">chorus</span>"&gt;</span><br/> <span class="element">&lt;label&gt;</span>[Refrain]<span class="element">&lt;/label&gt;</span><br/> <span class="element">&lt;l&gt;</span>She says she loves you <span class="element">&lt;/l&gt;</span><br/> <span class="element">&lt;l&gt;</span>And you know that can’t be bad <span class="element">&lt;/l&gt;</span><br/> <span class="element">&lt;l&gt;</span>Yes, she loves you <span class="element">&lt;/l&gt;</span><br/> <span class="element">&lt;l&gt;</span>And you know you should be glad<span class="element">&lt;/l&gt;</span><br/><span class="element">&lt;/lg&gt;</span><br/><span class="element">&lt;lg&gt;</span><br/> <span class="element">&lt;l&gt;</span>She said you hurt her so <span class="element">&lt;/l&gt;</span><br/> <span class="element">&lt;l&gt;</span>She almost lost her mind <span class="element">&lt;/l&gt;</span><br/> <span class="element">&lt;l&gt;</span>But now she said she knows <span class="element">&lt;/l&gt;</span><br/> <span class="element">&lt;l&gt;</span>You’re not the hurting kind<span class="element">&lt;/l&gt;</span><br/><span class="element">&lt;/lg&gt;</span><br/><span class="element">&lt;<span class="highlightelementname">ellipsis</span>&gt;</span><br/> <span class="element">&lt;metamark&gt;</span>******<span class="element">&lt;/metamark&gt;</span><br/> <span class="element">&lt;supplied <span class="attribute">copyOf</span>="<span class="attributevalue">#chorus</span>"/&gt;</span><br/><span class="element">&lt;/<span class="highlightelementname">ellipsis</span>&gt;</span><div style="float: right;"><a href="BIB.html#COEDADD-eg-92">bibliography</a> </div><div style="float: right;"><a href="examples-ellipsis.html">Show all</a> </div></div></div><div class="stdfooter autogenerated"><p>
+    [<a href="../../en/html/examples-ellipsis.html">English</a>]
+    [<a href="../../de/html/examples-ellipsis.html">Deutsch</a>]
+    [<a href="../../es/html/examples-ellipsis.html">Español</a>]
+    [<a href="../../it/html/examples-ellipsis.html">Italiano</a>]
+    [<a href="../../fr/html/examples-ellipsis.html">Français</a>]
+    [<a href="../../ja/html/examples-ellipsis.html">日本語</a>]
+    [<a href="../../ko/html/examples-ellipsis.html">한국어</a>]
+    [<a href="../../zh-TW/html/examples-ellipsis.html">中文</a>]
+    </p><hr/><div class="footer"><a class="plain" href="https://tei-c.org/about/">TEI Consortium</a> | <a class="plain" href="https://tei-c.org/about/contact/">Feedback</a></div><hr/><address><br/>TEI Guidelines <a class="link_ref" href="AB.html#ABTEI4" title="Future Developments and Version Numbers">Version</a> <a class="link_ref" href="../../readme-4.5.0.html">4.5.0</a>. Last updated on <span class="date">25th October 2022</span>, revision <a class="link_ref" href="https://github.com/TEIC/TEI/commit/871244cf1">871244cf1</a>. This page generated on 2023-01-01T06:19:22Z.</address></div></body></html>
